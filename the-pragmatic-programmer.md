@@ -88,5 +88,46 @@ Get back to people - Respond to people as soon as you can and let them know if y
 
 Document everything! Treat documentation as part of the code instead of an afterthought.
 
+# Chapter 2 - A Pragmatic Approach
+
+## The Essence of Good Design
+
+Overarching general principle is to keep code "easy to change" (ETC) - Good designs are easier to change than bad designs.
+
+Programmers should constantly be in "maintenance" mode. It shouldn't wait until an application is released or when bugs present themselves.
+
+### Duplication and DRY
+
+Duplicate knowledge can be a nightmare for maintence so strive for DRY (Don't Repeat Yourself).
+
+"Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
+
+You will eventually always forget if you have repeat information in multiple locations so have it only in one to make it easier to maintain.
+
+Not all code duplication is knowledge duplication. It's about the knowledge they represent instead of the content of the code.
+
+It is not necessary to docstring all functions with what the function does exactly. Let the code speak for itself.
+
+If you must repeat, like for performance gains, do so locally. Don't let the violation be exposed to the outside world.
+
+Where possible always use accessor functions to read and write the attributes of objects.
+
+Meyer's Uniform Access Principle - "All services offered by a module should be available through a uniform notation, which does not betray whether they are imlemented through storage or through compuation."
+
+Often code interfaces with the outside world. Whether it makes remote calls, fetches data from an external source, or uses an API. This is duplication because both have knowledge of the representation of the interface. If the interface changes at one end, the other end will break.
+
+Sometimes it's impossible to avoid, but it can be mitigated.
+
+For duplication across internal APIs - look for tools that specify the API in a neutral format. Ideally, these tools will store all APIs in a central repository for shared access.
+
+For duplication across external APIs - public APIs are documented using OpenAPI. Allows you to import the API spec into your local API tools and integrate more reliably with the service.
+
+Duplication with Data Sources - ???
+
+Interdeveloper duplication is insiduous and hard to deal with. Set up proper communication with your team or even set u a project librarian whose job is to facilitate knowledge exchange.
+
+
+
+
 
 
