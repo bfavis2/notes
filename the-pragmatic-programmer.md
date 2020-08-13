@@ -148,7 +148,44 @@ Get in the habit of being constantly critical of your code.
 
 Orthogonal systems are much easier to test.
 
-If a unit test has to get a bunch of other information from the rest of the system, then that module isn't very well decoupled.
+If a unit test has to get a bunch of other information from the rest of the system, then that module isn't very well decoupled. Bug fixes are the same way.
+
+Orthogonality applies to documentation too. The content should be independent of the style of documentation.
+
+No decisions are final - always assume that things can be changed around and be flexible.
+
+Hide third-party APIs behind your own abstraction layers.
+
+Break your code into components.
+
+### Tracer Bullets and Prototyping
+
+Refers to using a sort of flare first to refine your aim and to get a good sense of where you are aiming at before firing actual bullets. The same concept can apply to software.
+
+For a new project, instead of specifying systems to the last detail and trying to get it right the first time, try to just use a "tracer bullet" to just find the target and refine it from there.
+
+Tracer bullets get to the target fast and the developer gets immediate feedback.
+
+Look for the very important and potentialy risky requirements first.
+
+Tracer code is not disposable. It should be built off of.
+
+Convential alternative is a heavy engineering approach - divide code into modules that are coded in a vacuum. Combine all the modules at the end and have a fully completed application that can be used and tested.
+
+Tracer code has some key advantages:
+* Users to see something early
+* Gives developers a structure to work around
+* Builds an integration platform
+* Gives something to demonstrate and show
+* Clearer sense of progress
+
+Tracer code doesn't always hit the mark so adjust accordingly. Tracer code is relatively small so it should be easier to adjust.
+
+Tracer code is different than prototyping. Prototyping aims to explore specific aspects of the final product and is usually disposable.
+
+Think of tracer code as the skeleton of the final product, while prototyping is like a bad replica of a certain aspect of the final product that can't be used again.
+
+
 
 
 
