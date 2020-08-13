@@ -122,9 +122,35 @@ For duplication across internal APIs - look for tools that specify the API in a 
 
 For duplication across external APIs - public APIs are documented using OpenAPI. Allows you to import the API spec into your local API tools and integrate more reliably with the service.
 
-Duplication with Data Sources - ???
+Duplication with Data Sources - ??? I did not understand this part ???
 
 Interdeveloper duplication is insiduous and hard to deal with. Set up proper communication with your team or even set u a project librarian whose job is to facilitate knowledge exchange.
+
+Make code easy to reuse!
+
+### Orthogonality
+
+Orthogonality refers to objects/systems that are independent or decoupled from eachother. i.e. if you can change one thing without changing another thing, they are orthogonal.
+
+Eliminate effects between unrelated things. Design self-contained components (indepedent and having only a single, well-defined purpose).
+
+Orthogonal systems increases productivity and reduces risk.
+
+Modular, component based, and layered refer to the same general idea of orthogonality. Components organized into layers each provide a level of abstraction.
+
+Also be wary of coupling your design to external factors, like using a phone number as a customer identifier. Instead set up your own key that you control.
+
+Your code should be shy - modules shouldn't reveal any unenecessary information to other modules. They should be isolated.
+
+Avoid global data. Pass along context through paramters in an objects' constructors for example.
+
+Get in the habit of being constantly critical of your code.
+
+Orthogonal systems are much easier to test.
+
+If a unit test has to get a bunch of other information from the rest of the system, then that module isn't very well decoupled.
+
+
 
 
 
