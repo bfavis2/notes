@@ -185,6 +185,18 @@ Tracer code is different than prototyping. Prototyping aims to explore specific 
 
 Think of tracer code as the skeleton of the final product, while prototyping is like a bad replica of a certain aspect of the final product that can't be used again.
 
+Prototypes don't necessarly have to be code - you could map out the workflow or application logic with post-it notes for example.
+
+Items that carry a risk, are critical to the system, or are experimental are all good candidates to prototype.
+
+Prototypes are learning tools.
+
+When building prototypes you can gloss over the minor details. The aim is to get something represensative and decently functional.
+
+Make sure everyone, including management, that the protoype is not the final products or deployable.
+
+### Domain Languages and Estimation
+
 
 
 
