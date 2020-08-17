@@ -195,14 +195,24 @@ When building prototypes you can gloss over the minor details. The aim is to get
 
 Make sure everyone, including management, that the protoype is not the final products or deployable.
 
-### Domain Languages and Estimation
+### Domain Languages
 
+\*The domain language section doesn't really make sense to me\*
 
+Different languages comes with different features that change the way you solve a problem.
 
+Program close to the problem domain language.
 
+Internal domain languages are just extensions of the host languages - they are compiled and ran just like any other piece of code.
 
+Internal domain languages are bound by the syntax of the host language and thus are forced to compromise.
 
+External languages are converted or parsed into a form that the host language can run.
 
+External languages are much more flexible, but you need to write a parser to actually read it - this might require too much effort.
 
+### Estimation
+
+Use estimates to avoid surprises.
 
 
