@@ -215,4 +215,8 @@ External languages are much more flexible, but you need to write a parser to act
 
 Use estimates to avoid surprises.
 
+Give estimates for delivery dates depending on how sure you are.
+
+First step in a giving good estimates is to understand what is being really asked.
+
 
